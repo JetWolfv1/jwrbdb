@@ -1,0 +1,21 @@
+name: Build & Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy NodeJS app
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{secrets.SSH_HOST}}  #IP Address of server to ssh into
+          key: ${{secrets.SSH_KEY}}  #Private or public key of the server
+          username: ${{secrets.SSH_USERNAME}}  #User of the server to ssh into
+
+          script: |
+            mkdir test  #create folder to deploy to in the live server
+            cd test  #enter the folder
+            git clone git@github.com:JetWolfv1/jwrbdb  #clone repo to folder
+            echo 'Deployment successful to DigitalOcean'  #display success message
