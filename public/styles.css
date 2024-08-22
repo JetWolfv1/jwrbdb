@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kanit&display=swap");
+
+
+body {
+    font-family: "Kanit", sans-serif;
+    background-color: rgb(0,130,190);
+}
+
+img, div {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-link {
+    color: rgb(235,249,250);
+}
+.nav-link:hover {
+    color: rgb(60, 179, 235);
+}
+
+.intro {
+    font-size: 20px;    
+}
+
+.logo {
+    margin: 25px 0;
+    max-width: 75%;
+}
+
+.album-thumb {
+    border: 1px solid black;
+}
+
+.intro-wrap, .all-songs-wrap, .game-wrap, .api-wrap, .setlist-req-wrap, .setlist-form-wrap, .song-new-wrap {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px 0 50px 0;
+    background: rgb(211, 211, 211);
+}
+
+.all-songs-wrap {
+    margin: 0 0 25px 0;
+}
+
+.setlist-req-wrap {
+    margin: 0 0 15px 0;
+}
+
+.setlist-form-wrap {
+    margin: 0 0 0 0;
+    width: 50%;
+}
+
+
+.all-songs-head, .setlist-head {
+    color: rgb(236, 236, 236);
+    font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-top: -10px;
+}
+
+.position {
+    height: 50px;
+}
+
+.setlist-add {
+    margin: 20px 0 0 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sort-button { 
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(236, 236, 236, 1);
+    width: 100%;
+    font-size: 20px;
+    margin: 10px 0;    
+}
+
+.sort-button:hover {
+    background-color: rgba(92, 164, 223, 0.8);
+    color: rgb(236, 236, 236);
+    border: 2px solid rgb(236, 236, 236);
+}
+
+.song-basics {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+}
+
+.song-select {
+    text-decoration: none;
+}
+
+.song-select:hover {
+    color:rgb(211, 211, 211);
+    background-color: rgb(0,130,190);
+}
+
+.album-descr {
+    padding: 20px;
+    text-align: justify;
+}
+
+.req-song {
+    font-size: 20px;
+}
+
+.req-user {
+    text-align: right;
+}
+
+.req-comment {
+    margin-bottom: 20px;
+}
+
+.req-edit-button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(15, 189, 15);
+    color: black;
+    width: 100%;
+    font-size: 18px;
+}
+
+.req-edit-button:hover {
+    background-color: rgba(92, 164, 223, 0.8);
+    color: rgb(236, 236, 236);
+    border: none;
+}
+
+.song-add-button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(15, 189, 15);
+    color: black;
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+
+.song-new-wrap {
+    padding-left: 30px;
+    width: 75%;
+}
+
+
+.bordertown {
+    border: 1px solid black;
+}

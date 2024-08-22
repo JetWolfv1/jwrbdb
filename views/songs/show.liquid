@@ -1,0 +1,99 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+
+<div class="container-md">
+
+    <img alt="Big Rock Ending" class="logo" src="../bre-logo2.png"/>
+
+    <div class="game-wrap">
+        <div class="game-info">
+            <h1>"{{ song.title}}" by {{ song.artist }}</h1>
+        
+            {% if song.position contains "Vocals" %}
+                <img class="position" alt="Vocals" src="../rb-vocals.png">
+            {% else %}
+                <img class="position" alt="No Vocals" src="../rb-vocals-no.png">
+            {% endif %}
+            {% if song.position contains "Duet" %}
+                <img class="position" alt="Duet" src="../rb-duet.png">
+            {% else %}
+                <img class="position" alt="No Duet" src="../rb-duet-no.png">
+            {% endif %}
+            {% if song.position contains "Harmonies" %}
+                <img class="position" alt="Harmonies" src="../rb-harm.png">
+            {% else %}
+                <img class="position" alt="No Harmonies" src="../rb-harm-no.png">
+            {% endif %}
+            {% if song.position contains "Guitar" %}
+                <img class="position" alt="Guitar" src="../rb-guitar.png">
+            {% else %}
+                <img class="position" alt="No Guitar" src="../rb-guitar-no.png"> 
+            {% endif %}
+            {% if song.position contains "Bass" %}
+                <img class="position" alt="Bass" src="../rb-bass.png">
+            {% else %}
+                <img class="position" alt="No Bass" src="../rb-bass-no.png">
+            {% endif %}
+            {% if song.position contains "Drums" %}
+                <img class="position" alt="Drums" src="../rb-drums.png">
+            {% else %}
+                <img class="position" alt="No Drums" src="../rb-drums-no.png">
+            {% endif %}
+            {% if song.position contains "Keys" %}
+                <img class="position" alt="Keys" src="../rb-keys.png">
+            {% else %}
+                <img class="position" alt="No Keys" src="../rb-keys-no.png">
+            {% endif %}
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="setlist-add col-md-2">
+                <a href="/setlist/{{ song.id }}/add"><button class="btn btn-success">Add to Setlist</button></a>
+            </div>
+            <div class="setlist-add col-md-2">
+                <form action="/songs/{{ song._id }}?_method=DELETE" method="POST">
+                    <input type="submit" value="Delete Song" class="btn btn-danger">
+                </form>
+            </div>
+        </div> 
+    </div>
+
+    <div class="api-wrap">        
+        {% comment %} <p>logo:<br /><img src="{{ artist.strArtistLogo }}"></p> {% endcomment %}
+
+        <div class="row align-items-center justify-content-center">
+            <div class="song-basics col-md-4">
+                Title: <strong>{{ song.title }}</strong><br/>
+                Artist: <strong>{{ song.artist }}</strong><br/> 
+                Album: <strong>{{ album.strAlbum }}</strong><br/>
+                Release Year: <strong>
+                    {% if album.intYearRelease == null %}
+                        {{ song.year }}
+                    {% else %}
+                        {{ album.intYearReleased }}
+                    {% endif %}</strong>
+            </div>
+            <div class="song-basics col-md-3">
+                {% if album.strAlbumThumb == null %}
+                    <img alt="Album cover not found" class="album-thumb" src="../not-found.png">
+                {% else %}
+                    <img alt="Album cover" class="album-thumb" src="{{ album.strAlbumThumb }}">
+                {% endif %}
+            </div>
+            <div class="song-basics col-md-3">
+                {% if album.strAlbumThumbBack == null %}
+                    <img alt="Album back not found" class="album-thumb" src="../not-found.png">
+                {% else %}
+                    <img alt="Album back" class="album-thumb" src="{{ album.strAlbumThumbBack }}">
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="album-descr col-md-12">
+            {{ album.strDescriptionEN }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
