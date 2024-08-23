@@ -47,7 +47,13 @@ if ($result && $statement->rowcount() > 0) { ?>
     </tbody>
   </table>
   <?php } else { ?>
-    UH OH
+    <h1>UH OH</h1>
+    <p>Trying to get some vars here?</p>
+    <p>Connection: <?php echo escape($connection); ?></p>
+    <p>Query: <?php echo escape($sql); ?></p>
+    <p>Statement (executed): <?php echo escape($statement); ?></p>
+    <p>Result: <?php echo escape($result); ?></p>
+    
     <?php
   } ?>
 
