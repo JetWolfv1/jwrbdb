@@ -1,17 +1,12 @@
 <?php
-$user = "example_user";
-$password = "reihinostits";
-$database = "example_database";
-$table = "todo_list";
-
-try {
-  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
-  echo "<h2>TODO</h2><ol>";
-  foreach($db->query("SELECT content FROM $table") as $row) {
-    echo "<li>" . $row['content'] . "</li>";
+  $servername = "localhost";
+  $username = "breweb-client";
+  $password = "reihinost1t$";
+  $dbname = "jwrbdb";
+  // Create connection
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  // Check connection
+  if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
   }
-  echo "</ol>";
-} catch (PDOException $e) {
-  print "Error!: " . $e->getMessage() . "<br />";
-  die();
-}
+?>
