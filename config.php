@@ -5,8 +5,8 @@
  */
 
 $host     = "localhost";
-$username = "root";
-$password = "";
+$username = "jetwolf";
+$password = "9909-stratos-SQ";
 $dbname   = "jwrbdb";
 $dsn      = "mysql:host=$host;dbname=$dbname";
 $options  = array(
