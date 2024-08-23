@@ -1,14 +1,10 @@
-<?php
-require __DIR__ . '/vendor/autoload.php';
-
-use Cowsayphp\Farm;
-
-header('Content-Type: text/plain');
-
-$text = "Set a message by adding ?message=<message here> to the URL";
-if(isset($_GET['message']) && $_GET['message'] != '') {
-	$text = htmlspecialchars($_GET['message']);
-}
-
-$cow = Farm::create(\Cowsayphp\Farm\Cow::class);
-echo $cow->say($text);
+<?php include "templates/header.php"; ?>
+		<ul>
+      <li>
+        <a href="create.php"><strong>Title</strong></a> - show songs by title
+      </li>
+      <li>
+        <a href="read.php"><strong>Arist</strong></a> - show songs by artist
+      </li>
+    </ul>
+<?php include "templates/footer.php"; ?>
