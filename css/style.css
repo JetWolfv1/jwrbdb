@@ -5,7 +5,7 @@ body {
   background-color: rgb(0,130,190);
 }
 
-.nav-link {
+/* .nav-link {
   color: rgb(235,249,250);
 }
 .nav-link:hover {
@@ -80,7 +80,7 @@ body {
 .song-new-wrap {
   padding-left: 30px;
   width: 75%;
-}
+} */
 
 table {
   border-collapse: collapse;
