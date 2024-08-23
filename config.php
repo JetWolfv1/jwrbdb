@@ -4,7 +4,7 @@
  * dB configuration variables
  */
 
-$host     = "dolphin-app-ql8i3.ondigitalocean.app";
+$host     = "big-rock-ending";
 $username = "breweb-client";
 $password = "reihinost1t$";
 $dbname   = "jwrbdb";
