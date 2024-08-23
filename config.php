@@ -4,7 +4,7 @@
  * dB configuration variables
  */
 
-$host     = "big-rock-ending";
+$host     = "64.23.150.91";
 $username = "breweb-client";
 $password = "reihinost1t$";
 $dbname   = "jwrbdb";
