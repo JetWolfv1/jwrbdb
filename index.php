@@ -1,21 +1,14 @@
 <?php
-  $host = "127.0.0.1"
-  $user = "breweb-client";
-  $password = "reihinost1t$";
-  $database = "jwrbdb";
-  $table = "songs";
+require __DIR__ . '/vendor/autoload.php';
 
-  echo "<h5>Working on it!</h5>";
+use Cowsayphp\Farm;
 
-  try {
-    $db = new PDO("mysql:host=$host;dbname=$database", $user, $password);
-    echo "<h2>Songs</h2><ol>";
-    foreach($db->query("SELECT title FROM $table") as $row) {
-      echo "<li>" . $row['title'] . "</li>";
-    }
-    echo "</ol>";
-  } catch (PDOException $e) {
-    print "Error!: " . $e->getMessage() . "<br />";
-    die();
-  }
-?>
+header('Content-Type: text/plain');
+
+$text = "Set a message by adding ?message=<message here> to the URL";
+if(isset($_GET['message']) && $_GET['message'] != '') {
+	$text = htmlspecialchars($_GET['message']);
+}
+
+$cow = Farm::create(\Cowsayphp\Farm\Cow::class);
+echo $cow->say($text);
