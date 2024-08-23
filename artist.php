@@ -5,12 +5,13 @@
  */
 
 try {
+
   require "config.php";
   require "common.php";
   
   $connection = new PDO($dsn, $username, $password, $options);
   
-  $sql = "SELECT * FROM songs ORDER BY title";
+  $sql = "SELECT * FROM songs ORDER BY artist";
   
   $statement = $connection->prepare($sql);
   $statement->execute();
@@ -51,6 +52,6 @@ if ($result && $statement->rowcount() > 0) { ?>
   } ?>
 
 
-<h2>Songs by Title</h2>
+<h2>Songs by Artist</h2>
 
 <?php require "templates/footer.php"; ?>
