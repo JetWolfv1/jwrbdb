@@ -1,3 +1,5 @@
+<h2>Songs by Title</h2>
+
 <?php
 
 /**
@@ -47,15 +49,7 @@ if ($result && $statement->rowcount() > 0) { ?>
   </table>
   <?php } else { ?>
     <h1>UH OH</h1>
-    <p>Trying to get some vars here?</p>
-    <p>Connection: <?php echo escape($connection); ?></p>
-    <p>Query: <?php echo escape($sql); ?></p>
-    <p>Statement (executed): <?php echo escape($statement); ?></p>
-    <p>Result: <?php echo escape($result); ?></p>
     <?php
   } ?>
-
-
-<h2>Songs by Title</h2>
 
 <?php require "templates/footer.php"; ?>
