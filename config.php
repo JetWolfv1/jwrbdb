@@ -5,8 +5,8 @@
  */
 
 $host     = "localhost";
-$username = "breweb-client";
-$password = "reihinost1t$";
+$username = "root";
+$password = "";
 $dbname   = "jwrbdb";
 $dsn      = "mysql:host=$host;dbname=$dbname";
 $options  = array(
