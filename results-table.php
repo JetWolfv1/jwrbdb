@@ -9,7 +9,7 @@ if ($result && $statement->rowcount() > 0) { ?>
       <tr>
         <th>Title</th>
         <th>Artist</th>
-        <th>Year</th>
+        <!-- <th>Year</th> -->
         <th>Genre</th>
       </tr>
     </thead>
@@ -18,7 +18,7 @@ if ($result && $statement->rowcount() > 0) { ?>
         <tr>
           <td><?php echo escape($row["title"]); ?></td>
           <td><?php echo escape($row["artist"]); ?></td>
-          <td><?php echo escape($row["year"]); ?></td>
+          <!-- <td><?php // echo escape($row["year"]); ?></td> -->
           <td><?php echo escape($row["genre"]); ?></td>
         </tr>
         <?php } ?>

@@ -24,8 +24,8 @@ try {
 }
 ?>
 
-<?php require "templates/header.php"; ?>
+<?php require "header.php"; ?>
 
 <?php require "results-table.php"; ?>
 
-<?php require "templates/footer.php"; ?>
+<?php require "footer.php"; ?>
