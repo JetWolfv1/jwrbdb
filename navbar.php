@@ -1,13 +1,29 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a href="/" class="navbar-brand">BRE</a>
-    <div id="navbarNav">
-      <a href="title.php" class="nav-link">Titles</a>
-      <a href="artist.php" class="nav-link">Artist</a>
-      <!-- <a href="year.php" class="nav-link">Year</a> -->
-      <a href="genre.php" class="nav-link">Genre</a>
-      <a href="twopart.php" class="nav-link">Two-Part Vocals</a>
-      <a href="threepart.php" class="nav-link">Three-Part Vocals</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+    <a href="/" class="navbar-brand">Jill's 40th? Party.</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="title.php">Titles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="artist.php">Artist</a>
+        </li>
+        <!-- <a href="year.php" class="nav-link">Year</a> -->
+        <li class="nav-item">
+          <a class="nav-link" href="genre.php">Genre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="twopart.php">Two-Part Vocals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="threepart.php">Three-Part Vocals</a>
+        </li>
+      </ul>
     </div>
-  </div>
+
 </nav>
