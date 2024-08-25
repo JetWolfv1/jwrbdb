@@ -1,21 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="nav-container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   
-    <a href="/" class="navbar-brand">Jill's 40th? Party.</a>
+    <a href="index.php" class="navbar-brand">Jill's 40th? Party.</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="nav nav-tabs">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="title.php">Titles</a>
+          <a class="nav-link" href="list.php?t=title">Titles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="artist.php">Artist</a>
+          <a class="nav-link" href="list.php?t=artist">Artist</a>
         </li>
         <!-- <a href="year.php" class="nav-link">Year</a> -->
         <li class="nav-item">
-          <a class="nav-link" href="genre.php">Genre</a>
+          <a class="nav-link" href="list.php?t=genre">Genre</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="twopart.php">Two-Part Vocals</a>
@@ -26,4 +27,5 @@
       </ul>
     </div>
 
-</nav>
+    </nav>
+</div>

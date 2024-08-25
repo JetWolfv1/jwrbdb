@@ -9,23 +9,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
-
   </head>
 
   <body>
+    
     <div class="container">
 
-      <?php include "navbar.php"; ?>
-
-      <!-- <p><b><a href="index.php">Home</a></b></p> -->
-        <!-- <p>Sort by: -->
-          <!-- <b><a href="title.php">Title</a></b> || -->
-          <!-- <b><a href="artist.php">Artist</a></b> || -->
-          <!-- <b><a href="year.php">Year</a></b> || -->
-          <!-- <b><a href="genre.php">Genre</a></b></p> -->
-        <!-- <p>Filter by: -->
-          <!-- <b><a href="twopart.php">2-part vocals</a></b> || -->
-          <!-- <b><a href="threepart.php">3-part vocals</a></b></p> -->
-
-
-  <!-- <h1>JWRBDB</h1> -->
+    <?php include "navbar.php"; ?>
