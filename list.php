@@ -20,8 +20,8 @@ try {
 <?php require "header.php"; ?>
 
 <div class="d-flex justify-content-between filter-bar">
-  <div class="filter-letter">
-    <div class="d-flex p-2">
+  <div class="sort-container">
+    <div class="d-flex p-2 sort-container">
 
       <?php
         switch ($type) {
@@ -39,7 +39,7 @@ try {
 
     </div>
 
-    <div class="d-flex flex-row mb3">
+    <div class="d-flex flex-row mb3 sort-container">
       <div class="p-2"><?php echo '<a href="list.php?' . http_build_query($urlBuild) . '">All</a>'
         ?>
       </div>      

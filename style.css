@@ -11,6 +11,15 @@ div .nav-container {
   border-color: red;
   border-width: 10px; */
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .filter-bar {
@@ -19,7 +28,10 @@ div .nav-container {
   margin-bottom: 1.25rem;
   border: 1px solid #5bc0de;
   border-width: .25rem;
-  border-radius: .25rem
+  border-radius: .25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   }
 
 .bd-callout {
