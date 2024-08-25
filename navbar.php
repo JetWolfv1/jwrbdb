@@ -19,10 +19,10 @@
           <a class="nav-link" href="list.php?t=genre">Genre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="twopart.php">Two-Part Vocals</a>
+          <a class="nav-link" href="list.php?v=2pt">Two-Part Vocals</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="threepart.php">Three-Part Vocals</a>
+          <a class="nav-link" href="list.php?v=3pt">Three-Part Vocals</a>
         </li>
       </ul>
     </div>

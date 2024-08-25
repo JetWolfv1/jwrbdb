@@ -157,7 +157,7 @@ try {
       </div>
     </div>
   </div>
-  <div class="filter-vocal">
+  <!-- <div class="filter-vocal">
     <div class="d-flex p-2">
       Vocals filter:
     </div>
@@ -169,7 +169,7 @@ try {
         <a href="list.php?v=3pt">Three-part</a>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <?php require "results-table.php"; ?>
