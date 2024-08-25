@@ -39,7 +39,7 @@ try {
 
     </div>
 
-    <div class="d-flex flex-row mb3 sort-container">
+    <div class="d-flex flex-wrap">
       <div class="p-2"><?php echo '<a href="list.php?' . http_build_query($urlBuild) . '">All</a>'
         ?>
       </div>      
